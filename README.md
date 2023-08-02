@@ -37,7 +37,7 @@ There is one mandatory parameter **"ReportParameters"** which needs to be create
 
 Other potential parameters can be created manually or automatically by design tool when used in dataset query.
 
-Till eWay-CRM 7.3.0 it was not possible to chain parameters even if desing tool was able do that. In other words no parameter could depend on the value of other parameter.
+Till eWay-CRM 7.3.0 it was not possible to chain parameters even if design tool was able to do that. In other words no parameter could depend on the value of other parameter.
 
 #### Predefined values
 eWay-CRM allows to predefine a report values based on the module from which the Report is generated, module has to be enabled for report by [Modules field](https://kb.eway-crm.com/documentation/5-administration-application/administration-application-older-version-of-administration-environment/5-9-reports/report-card).
