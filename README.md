@@ -37,7 +37,7 @@ There is one mandatory parameter **"ReportParameters"** which needs to be create
 
 Other potential parameters can be created manually or automatically by design tool when used in dataset query.
 
-Currently it is not possible to chain parameters even if desing tool is able do that. In other words no parameter can depend on the value of other parameter.
+Till eWay-CRM 7.3.0 it was not possible to chain parameters even if desing tool was able do that. In other words no parameter could depend on the value of other parameter.
 
 #### Predefined values
 eWay-CRM allows to predefine a report values based on the module from which the Report is generated, module has to be enabled for report by [Modules field](https://kb.eway-crm.com/documentation/5-administration-application/administration-application-older-version-of-administration-environment/5-9-reports/report-card).
@@ -51,6 +51,11 @@ When the report is opened from a Project detail, the report will be automaticall
 In the **Projects_ItemID** default value, the first part **Projects** is name of the table (module) and **ItemID** is name of the column from that table.
 
 *Predefined values do not work when Allow multiple values is enabled.*
+
+### Links
+It is possible to create a link to an existing item in eWay-CRM. An example of link to Lead: 'eWay://Leads/' + CAST(ItemID AS NVARCHAR(256)) AS Link. The link should be put into Action via Text Box Properties and opens a new window with the item after you click on it.
+
+![image](https://github.com/eway-crm/reports/assets/90684019/190caab1-66c3-4343-a98b-9ddba2d525c6)
 
 ### Layout
 There is a wide range of object which can be used to display the data. Object are availabe from right-click context menu. Most frequently used are Tablix, Tables or Charts.
