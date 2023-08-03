@@ -53,7 +53,13 @@ In the **Projects_ItemID** default value, the first part **Projects** is name of
 *Predefined values do not work when Allow multiple values is enabled.*
 
 ### Links
-It is possible to create a link to an existing item in eWay-CRM. An example of link to Lead: 'eWay://Leads/' + CAST(ItemID AS NVARCHAR(256)) AS Link. The link should be put into Action via Text Box Properties and opens a new window with the item after you click on it.
+It is possible to create a link to an existing item in eWay-CRM. An example of link to Lead:
+
+```sql
+SELECT 'eWay://Leads/' + CAST(ItemID AS NVARCHAR(256)) AS Link
+```
+
+The link should be put into Action via Text Box Properties and opens a new window with the item after you click on it.
 
 ![image](https://github.com/eway-crm/reports/assets/90684019/190caab1-66c3-4343-a98b-9ddba2d525c6)
 
